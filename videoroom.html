@@ -27,6 +27,7 @@
 
 <AssetVideo id="Mercator_projection_Video" src="includes/video/sample.mp4" auto_play="true" loop="true" />
 </Assets>
+
 <Room visible="false" pos="0 -3 12" xdir="-1 0 0.000002" ydir="0 1 0" zdir="-0.000002 0 -1" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_back_id="sky_back" skybox_right_id="sky_right" skybox_up_id="sky_up" default_sounds="false" >
 
 #This is the pyramidal structure
@@ -34,7 +35,7 @@
 
 #This is the spherical screen, scale changes the size
 #To change the thing displayed, substitute image_id part for the other supported media formats in the asset section above.
-<Object id="Mercator_Projection_Screen" lighting="false" image_id="Mercator_projection_Video" scale="7 7 7" pos="0 -1.6 0" xdir="-1 0 -0.000002" zdir="0.000002 0 -1" />
+<Object id="Mercator_Projection_Screen" lighting="false" video_id="Mercator_projection_Video" scale="7 7 7" pos="0 -1.6 0" xdir="-1 0 -0.000002" zdir="0.000002 0 -1" />
 
 </Room>
 </FireBoxRoom>
