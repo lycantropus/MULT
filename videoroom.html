@@ -3,21 +3,13 @@
 <title>Video Room</title>
 </head>
 <body>
-
-<span style="text-align:center;"><h2>Video Room</h2></span>
-
 <FireBoxRoom>
 <Assets>
 
-#3D Pyramid Structure
-
 <AssetObject id="Main" src="includes/video/Pyramid_Structure.dae" />
 <AssetObject id="Maincollison" src="includes/video/Pyramid_Structure_Collision_Mesh.obj" />
-
-#Screen for the 360 degree image/video/gif/websurface
 <AssetObject id="Mercator_Projection_Screen" src="includes/video/Mercator_Projection_Screen.obj" />
 
-#Skybox cubemap images 
 <AssetImage id="sky_left" src="includes/video/skybox_left.png" />
 <AssetImage id="sky_right" src="includes/video/skybox_right.png" />
 <AssetImage id="sky_front" src="includes/video/skybox_front.png" />
@@ -25,16 +17,13 @@
 <AssetImage id="sky_up" src="includes/video/skybox_up.png" />
 <AssetImage id="sky_down" src="includes/video/skybox_down.png" />
 
-<AssetVideo id="Mercator_projection_Video" src="includes/video/sample.mp4" auto_play="true" loop="true" />
+<AssetVideo id="Mercator_projection_Video" src="includes/video/space.mp4" auto_play="true" loop="true" />
 </Assets>
 
 <Room visible="false" pos="0 -3 12" xdir="-1 0 0.000002" ydir="0 1 0" zdir="-0.000002 0 -1" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_back_id="sky_back" skybox_right_id="sky_right" skybox_up_id="sky_up" default_sounds="false" >
 
-#This is the pyramidal structure
 <Object id="Main" cull_face="none" lighting="false" collision_id="Maincollison" />
 
-#This is the spherical screen, scale changes the size
-#To change the thing displayed, substitute image_id part for the other supported media formats in the asset section above.
 <Object id="Mercator_Projection_Screen" lighting="false" video_id="Mercator_projection_Video" scale="7 7 7" pos="0 -1.6 0" xdir="-1 0 -0.000002" zdir="0.000002 0 -1" />
 
 </Room>
