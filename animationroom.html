@@ -6,25 +6,30 @@
 	<FireBoxRoom>
 		<Assets>
 			<AssetScript src="includes/scripts/animation.js" />
-			<AssetImage id="sky_left"  src="includes/animation/sky.png" />
-			<AssetImage id="sky_right" src="includes/animation/sky.png" />
-			<AssetImage id="sky_front" src="includes/animation/sky.png" />
-			<AssetImage id="sky_back"  src="includes/animation/sky.png" />
-			<AssetImage id="sky_up"    src="includes/animation/sky.png" />
-			<AssetImage id="sky_down"  src="includes/animation/sky.png" />
+			<AssetImage id="sky_left"  src="includes/img/sky.png" />
+			<AssetImage id="sky_right" src="includes/img/sky.png" />
+			<AssetImage id="sky_front" src="includes/img/sky.png" />
+			<AssetImage id="sky_back"  src="includes/img/sky.png" />
+			<AssetImage id="sky_up"    src="includes/img/sky.png" />
+			<AssetImage id="sky_down"  src="includes/img/sky.png" />
 
-			<AssetImage id="meteor"  src="includes/animation/meteor.png" />
+			<AssetImage id="meteor"  src="includes/img/meteor.png" />
+			<AssetImage id="spaceship"  src="includes/img/spaceship.png" />		
 
 		</Assets>
-		<Room use_local_asset="room3" fwd="0 0 -1" pos="0 0 20" col="#ccc" visible="true" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_back_id="sky_back" skybox_right_id="sky_right" skybox_up_id="sky_up" default_sounds="false"> 
+		<Room use_local_asset="room6" fwd="0 0 -1" pos="0 0 20" col="#ccc" visible="true" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_back_id="sky_back" skybox_right_id="sky_right" skybox_up_id="sky_up" default_sounds="false"> 
 			<Sound id="testsound"  rect="-2 -7 1 -10" loop="false" play_once="true" pos ="-0.5 1.1 -8.6"/>
 
 
-			<Object id="plane" js_id="meteor1" pos="0 30 -20" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
-			<Object id="plane" js_id="meteor2" pos="0 20 -15" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
-			<Object id="plane" pos="0 15 -40" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
-			<Object id="plane" pos="0 10 -50" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
-			<Object id="plane" pos="0 10 -30" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
+			<Object id="plane" js_id="meteor1" pos="80 80 -20" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
+			<Object id="plane" js_id="meteor2" pos="80 80 -15" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
+			<Object id="plane" js_id="meteor3" pos="80 85 -40" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
+			<Object id="plane" js_id="meteor4" pos="80 80 -50" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
+			<Object id="plane" js_id="meteor5" pos="80 80 -30" fwd="0 0 -1" scale="10 5 0" lighting="false" cull_face="none" image_id="meteor" />
+
+			<Object id="plane" js_id="spaceship" pos="0 0 0" fwd="0 0 -1" scale="20 10 0" lighting="false" cull_face="none" image_id="spaceship" />
+
+
 		</Room>
 	</FireBoxRoom>
 </body>

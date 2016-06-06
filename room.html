@@ -1,23 +1,57 @@
 <html>
 <head>
-	<title>Hello VR World!</title>
+	<title>Multimedia Intergalactic Museum!</title>
 </head>
 <body>
 	<FireBoxRoom>
 		<Assets>
-			<AssetImage id="sky_left"  src="includes/animation/sky.png" />
-			<AssetImage id="sky_right" src="includes/animation/sky.png" />
-			<AssetImage id="sky_front" src="includes/animation/sky.png" />
-			<AssetImage id="sky_back"  src="includes/animation/sky.png" />
-			<AssetImage id="sky_up"    src="includes/animation/sky.png" />
-			<AssetImage id="sky_down"  src="includes/animation/sky.png" />
+			<AssetImage id="sky_left"  src="includes/img/sky.png" />
+			<AssetImage id="sky_right" src="includes/img/sky.png" />
+			<AssetImage id="sky_front" src="includes/img/sky.png" />
+			<AssetImage id="sky_back"  src="includes/img/sky.png" />
+			<AssetImage id="sky_up"    src="includes/img/sky.png" />
+			<AssetImage id="sky_down"  src="includes/img/sky.png" />
+
+			<AssetImage id="feup"  src="includes/img/feup.png" />
+
+			<AssetImage id="audio"  src="includes/img/audio.PNG" />
+			<AssetImage id="video"  src="includes/img/video.PNG" />
+			<AssetImage id="graphics"  src="includes/img/graphics.PNG" />
+			<AssetImage id="image"  src="includes/img/image.PNG" />
+			<AssetImage id="animation"  src="includes/img/animation.PNG" />
+
+			<AssetWebSurface id="mnse_feup" src="https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=350405" width="1920" height="1080" />
+
 		</Assets>
 		<Room use_local_asset="room2" pos="0 0 -5" col="0 0 1" visible="true" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_back_id="sky_back" skybox_right_id="sky_right" skybox_up_id="sky_up" col="#ccc"> 
-			<Link pos="-10 0 5.075" fwd="0 0 -1" url="audioroom.html" col="1 1 1" scale="2 3.5 1" title="AUDIO"/>
-			<Link pos="10 0 5.075" fwd="0 0 -1" url="videoroom.html" col="1 1 1" scale="2 3.5 1" title="VIDEO"/>
-			<Link pos="0 0 5" fwd="0 0 -1" url="animationroom.html" col="1 1 1" scale="2 3.5 1" title="ANIMAÇÃO"/>
-			<Link pos="-10 0 -5.075" fwd="0 0 1" url="imageroom.html" col="1 1 1" scale="2 3.5 1" title="IMAGEM"/>
-			<Link pos="10 0 -5.075" fwd="0 0 1" url="graphicroom.html" col="1 1 1" scale="2 3.5 1" title="GRÁFICO"/>
+
+			<Object id="plane" pos="-10 2 4.8" fwd="0 0 -1" scale="1 1 1" lighting="false" cull_face="none" image_id="audio" />
+			<Link draw_text="false" pos="-10 0 5.075" fwd="0 0 -1" url="audioroom.html" col="1 1 1" scale="2 3.5 1" title="AUDIO"/>
+			
+			<Object id="plane" pos="10 2 4.8" fwd="0 0 -1" scale="1 1 1" lighting="false" cull_face="none" image_id="video" />
+			<Link draw_text="false" pos="10 0 5.075" fwd="0 0 -1" url="videoroom.html" col="1 1 1" scale="2 3.5 1" title="VIDEO"/>
+
+			<Object id="plane" pos="0 2 4.8" fwd="0 0 -1" scale="1 1 1" lighting="false" cull_face="none" image_id="animation" />
+			<Link draw_text="false" pos="0 0 5" fwd="0 0 -1" url="animationroom.html" col="1 1 1" scale="2 3.5 1" title="ANIMAÇÃO"/>
+
+			<Object id="plane" pos="-10 2 -4.8" fwd="0 0 1" scale="1 1 1" lighting="false" cull_face="none" image_id="image" />
+			<Link draw_text="false" pos="-10 0 -5.075" fwd="0 0 1" url="imageroom.html" col="1 1 1" scale="2 3.5 1" title="IMAGEM"/>
+
+			<Object id="plane" pos="10 2 -4.8" fwd="0 0 1" scale="1 1 1" lighting="false" cull_face="none" image_id="graphics" />
+			<Link draw_text="false" pos="10 0 -5.075" fwd="0 0 1" url="graphicroom.html" col="1 1 1" scale="2 3.5 1" title="GRÁFICO"/>
+
+			<Paragraph locked="true" pos="20 4.25 5.9" back_alpha="0" fwd="-1 0 0" scale="8 8 8" text_col="#000">MULTIMEDIA</Paragraph>
+			<Paragraph locked="true" pos="20 3.5 5.4" back_alpha="0" fwd="-1 0 0" scale="10 10 10" text_col="#000">I N T E R G A L A C T I C</Paragraph>
+			<Paragraph locked="true" pos="20 2.75 4.85" back_alpha="0" fwd="-1 0 0" scale="6 6 6" text_col="#000">MUSEUM</Paragraph>
+			<Object id="plane" pos="19.9 1 -3.5" fwd="-1 0 0" scale="2 1 0" lighting="false" cull_face="none" image_id="feup" />
+			<Paragraph locked="true" pos="20 1.15 5.85" back_alpha="0" fwd="-1 0 0" scale="3 3 3" text_col="#000">André Bordalo</Paragraph>
+			<Paragraph locked="true" pos="20 .85 5.85" back_alpha="0" fwd="-1 0 0" scale="3 3 3" text_col="#000">Gonçalo Lobo</Paragraph>
+
+			<Object id="plane" websurface_id="mnse_feup"  pos="-19.9 3 0" fwd="1 0 0" scale="8 4 8"  />
+
+
+
+
 		</Room>
 	</FireBoxRoom>
 </body>
