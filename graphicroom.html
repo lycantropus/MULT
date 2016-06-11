@@ -5,9 +5,36 @@
 	<body>
 		<FireBoxRoom>
 			<Assets>
+				<AssetImage id="sky_left"  src="includes/img/sky.png" />
+				<AssetImage id="sky_right" src="includes/img/sky.png" />
+				<AssetImage id="sky_front" src="includes/img/sky.png" />
+				<AssetImage id="sky_back"  src="includes/img/sky.png" />
+				<AssetImage id="sky_up"    src="includes/img/sky.png" />
+				<AssetImage id="sky_down"  src="includes/img/sky.png" />
+				<AssetImage id="svg1010"  src="includes/img/svg1010.png" />
+				<AssetImage id="svg100100"  src="includes/img/svg100100.png" />
+				<AssetImage id="svg500500"  src="includes/img/svg500500.png" />
+				<AssetImage id="svg10001000"  src="includes/img/svg10001000.png" />
+				<AssetImage id="svg50005000"  src="includes/img/svg50005000.png" />
 			</Assets>
-			<Room use_local_asset="room_plane" col="0 0 1" visible="true"> 
-			<Link pos="-5 0 0" fwd="0 0 1" url="http://www.fe.up.pt" col="1 1 1" scale="2 3.5 1" title="caffeine on wikimedia"/>
+			<Room use_local_asset="room_3_wide" fwd ="0 0 -1" visible="true" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_back_id="sky_back" skybox_right_id="sky_right" skybox_up_id="sky_up"> 
+
+			<Object id="plane" pos="5.5 2 -14.8" fwd="-0 0 1" scale="0.01 0.01 0.01" lighting="false" cull_face="none" image_id="svg1010" />
+
+			<Object id="plane" pos="3 2 -14.8" fwd="-0 0 1" scale="0.1 0.1 0.1" lighting="false" cull_face="none" image_id="svg100100" />
+
+			<Object id="plane" pos="0.5 2 -14.8" fwd="-0 0 1" scale="0.5 0.5 0.5" lighting="false" cull_face="none" image_id="svg500500" />
+
+			<Object id="plane" pos="-2.5 2 -14.8" fwd="-0 0 1" scale="1 1 1" lighting="false"
+			cull_face="none" image_id="svg10001000" />
+
+			<Object id="plane" pos="-5.5 2 -14.8" fwd="-0 0 1" scale="2.5 2.5 2.5" lighting="false"
+			cull_face="none" image_id="svg50005000" />
+			
+
+			<Object id="plane" pos="0 2 -14.9" fwd="-0 0 1" scale="15 4 15" lighting="false"
+			cull_face="none" image_id="svg50005000234" />
+
 			</Room>
 		</FireBoxRoom>
 	</body>
